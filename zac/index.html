@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+            font-family: "Roboto","Noto Sans TC";
+            box-sizing: border-box;
+        }
+        html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,input,textarea {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        img {
+            width: 100%;
+            border: 0;
+            vertical-align: top;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .full-width {
+            width: 100%;
+        }
+        .fixed-width {
+            width: 1170px;
+            margin: auto;
+        }
+        .col-2,.col-3,.col-4,.col-5 {
+            padding-left: 20px;
+            padding-right: 20px;
+            float: left;
+        }
+        .col-2 {
+            width: 50%;
+        }
+        .col-3 {
+            width: calc(100%/3)
+        }
+        .col-4 {
+            width: 25%;
+        }
+        .col-5 {
+            width: 20%;
+        }
+        nav {
+            background-color: #222;
+/*            height: 50px;*/
+        }
+        nav .logo {
+            width: 120px;
+            height: 50px;
+            background-color: #aaa;
+            float: left;
+        }
+        nav .menu {
+            float: right;
+        }
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        nav .menu a {
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 50px;
+            text-decoration: none;
+            color: #eee;
+        }
+        nav .menu a:hover {
+            color: #fa0;
+        }
+        header {
+            background-image: url(images/001.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+        header .content {
+            color: #fff;
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 100px;
+/*            text-align: center;*/
+        }
+        header p {
+            text-align: left;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        #about,#product,#contact {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        #about .col-3 {
+            text-align: center;
+        }
+        #about .col-3 h3 {
+            margin-bottom: 20px;
+        }
+        #about .col-3 p {
+            line-height: 1.4em;
+        }
+        #product {
+            background-color: #aaa;
+        }
+        #product .col-4 {
+            height: 150px;
+            overflow: hidden;
+
+        }
+        #product .fixed-width:nth-of-type(2){
+            margin-bottom: 30px;
+        }
+        footer {
+            height: 70px;
+            line-height: 70px;
+            background-color: #222;
+            color: #eee;
+        }
+        footer .sns {
+            text-align: right;
+            
+        }
+        footer .sns a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            line-height: 70px;
+            vertical-align: top;
+        }
+        footer .sns a:hover {
+            color: #fa0;
+        }
+        #contact .fixed-width {
+            width: 600px;
+        }
+        input,textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 15px;
+/*            border: 1px solid #aaa;*/
+            background-color: #eee;
+            
+            transition: all .5s;
+        }
+        input[type=submit]{
+            background-color: #333;
+            color: #fff;
+        } 
+        *::placeholder {
+            color: #8d8d8d;
+            transition:  all .5s;
+        }
+        input:focus,textarea:focus {
+/*            outline: 2px solid #fa0*/
+            outline: none;
+            background-color: #9a9a9a;
+        }
+        *:focus::placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="full-width clearfix">
+        <div class="fixed-width clearfix">
+            <div class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">關於</a></li>
+                    <li><a href="#">產品介紹</a></li>
+                    <li><a href="#">連絡方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="full-width">
+        <div class="fixed-width">
+            <div class="content">
+                <h1>QWERTY</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, perferendis, veritatis. Voluptatum beatae neque aliquid.
+                </p>
+            </div>
+        </div>
+    </header>
+   <div class="full-width" id="about">
+      <div class="fixed-width">
+          <h2 class="title">關於</h2>
+      </div>
+       <div class="fixed-width clearfix">
+           <div class="col-3">
+               <h3>關於我們</h3>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel neque mollitia ratione excepturi dicta repellendus enim ipsa laudantium magni itaque, delectus expedita commodi explicabo, repudiandae, eos provident voluptates soluta perferendis.
+               </p>
+           </div>
+           <div class="col-3">
+               <h3>經營團隊</h3>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel neque mollitia ratione excepturi dicta repellendus enim ipsa laudantium magni itaque, delectus expedita commodi explicabo, repudiandae, eos provident voluptates soluta perferendis.
+               </p>
+           </div>
+           <div class="col-3">
+               <h3>企業責任</h3>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel neque mollitia ratione excepturi dicta repellendus enim ipsa laudantium magni itaque, delectus expedita commodi explicabo, repudiandae, eos provident voluptates soluta perferendis.
+               </p>
+           </div>
+       </div>
+   </div>
+    <div class="full-width no-padding" id="product">
+        <div class="fixed-width">
+          <h2 class="title">產品介紹</h2>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+  
+        </div>
+        <div class="fixed-width clearfix">    
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/002.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="full-width">
+        <div class="fixed-width">
+            <h2 class="title">連絡方式</h2>
+        </div>
+        <div class="fixed-width">
+            <form action="">
+                <input type="text" placeholder="請輸入姓名">
+                <input type="text" placeholder="請輸入電話">
+                <input type="email" placeholder="請輸入EMAIL">
+                <textarea name="" id="" cols="30" rows="10" placeholder="請寫下您的意見"></textarea>
+                <input type="submit"value="送出">
+            </form>
+        </div>
+    </div>
+    <footer class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="col-2">
+                <div class="copyrights">
+                    2017 &copy; All Rights Reserved
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="sns">
+                    <a href="#" class="fa fa-facebook fa-2x"></a>
+                    <a href="#" class="fa fa-twitter fa-2x"></a>
+                    <a href="#" class="fa fa-pinterest fa-2x"></a>
+                    <a href="#" class="fa fa-instagram fa-2x"></a>
+                    <a href="#" class="fa fa-yelp fa-2x"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+終端機
+
+windows + R > cmd > dir/w
+
+windows系統:
+dir/w 查看目錄
+cd 資料夾名稱
+切換資料夾
+
+mac系統:
+ls/w 查看目錄
+
+
+
+mkdir 建立資料夾
+rmdir 刪除
